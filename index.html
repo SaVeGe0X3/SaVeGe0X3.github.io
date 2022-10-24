@@ -6,8 +6,9 @@
 <h2>Thanks for the ip</h1>
 
 <script>
-$.getJSON('https://ipapi.co/json')
+$.getJSON('https://ipapi.co/json', function(data) {
 alert(data, null, 2);
+});
 </script> 
 
 </body>

